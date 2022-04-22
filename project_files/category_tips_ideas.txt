@@ -30,7 +30,7 @@ SHOPPING:
     * Recycling packaging
     * Buy loose produce
 
-ONLINE:
+TECHNOLOGY:
     * Local petitions
     * Earth Day website link
     * Basic instructions how to find website
