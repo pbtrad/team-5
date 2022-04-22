@@ -1,0 +1,50 @@
+CATEGORIES
+
+HOME:
+    * Energy use
+    * Recycling
+    * Water usage
+    * Cleaning product use
+    * Insulation
+    * Green energy provider
+    * Cloth nappies/babywipes
+
+BEACH:
+    * Pick up rubbish
+    * Use eco sunscreen
+    * Don't collect shells
+    * Don't intefere with local wildlife
+
+PARK:
+    * Pick up rubbish
+    * Walk/cycle to park 
+    * Don't light fires eg: bbq
+    * Bring own bottle of water
+
+SHOPPING:
+    * Shop local
+    * Seasonal produce
+    * Eat less meat
+    * Reuseable bags
+    * Buy sustainable clothes
+    * Recycling packaging
+    * Buy loose produce
+
+ONLINE:
+    * Local petitions
+    * Earth Day website link
+    * Basic instructions how to find website
+    * Local tidy town/clean up initiatives
+    
+TRAVEL:
+    * Public Transport
+    * Pack lightly
+    * Stick to path to avoid interfering in local wildlife
+    * Car share
+    * Consider a staycation
+    * Electric car
+
+
+    
+
+
