@@ -43,16 +43,16 @@
             <div class="row">
 
                 <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="card w-80 mx-auto">
+                    <div class="card w-80 mx-auto" data-bs-toggle="modal" data-bs-target="#modal-home">
                         <img src="./assets/images/home.png" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h3 class="card-title text-center">Home</h3>
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="card w-80 mx-auto">
+                    <div class="card w-80 mx-auto" data-type="beach">
                         <img src="./assets/images/beach.png" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h3 class="card-title text-center">Beach</h3>
@@ -61,7 +61,7 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="card w-80 mx-auto">
+                    <div class="card w-80 mx-auto" data-type="park">
                         <img src="./assets/images/park.png" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h3 class="card-title text-center">Park</h3>
@@ -70,7 +70,7 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="card w-80 mx-auto">
+                    <div class="card w-80 mx-auto" data-type="technology">
                         <img src="./assets/images/technology.png" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h3 class="card-title text-center">Technology</h3>
@@ -79,7 +79,7 @@
                 </div>
 
                <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="card w-80 mx-auto">
+                    <div class="card w-80 mx-auto" data-type="shopping">
                         <img src="./assets/images/shopping.png" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h3 class="card-title text-center">Shopping</h3>
@@ -88,16 +88,50 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="card w-80 mx-auto">
+                    <div class="card w-80 mx-auto" data-type="travel">
                         <img src="./assets/images/travel.png" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h3 class="card-title text-center">Travel</h3>
                         </div>
                     </div>
                 </div>
-
+                
             </div>
         </div>
+
+
+        <div class="modal fade" id="modal-home" aria-labelledby="modal-homeLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title text-center w-100" id="modal-homeLabel">
+                            At Home
+                        </h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="d-none d-md-block col-md-6">
+                                <img class="w-100" src="./assets/images/home.png">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h4 > Try these top tips at home;</h4>
+                                <ul>
+                                    <li>Energy use</li>
+                                    <li>Recycling</li>
+                                    <li>Water usage</li>
+                                    <li>Cleaning product use</li>
+                                    <li>Insulation</li>
+                                    <li>Green energy provider</li>
+                                    <li>Cloth nappies/babywipes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </main>
 
@@ -108,6 +142,6 @@
             <h1>PLACEHOLDER FOR FOOTER</h1>
         </div>
     </footer>
-<script src="assets/js/script.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
