@@ -41,9 +41,48 @@ nav {
 
 /* review need for empty container & sizing after nav bar has been created */
 .header-container {
-    padding-top:15vh;
-  }
+    height: calc(100vh - 10vh);
+    min-height: 500px;
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+.bg-top-container {
+  height: calc(100vh - 20vh);
+  background-image: url('../images/bg-top.png');
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home-tips{
+  color: var(--paint-steel);
+}
+  
+.home-text{
+  padding-top: 5vh;
+  color: var(--paint-asparagus);
+  font-weight: bold;
+}
+
+.home-lead {
+  color: var(--paint-beaver);
+  text-align: center;
+  font-size: max(1vw, 2vh, 1vmin);
+}
+
+.home-heading {
+  color: var(--paint-asparagus);
+  font-size: max(4vw, 9vh, 5vmin);
+}
+
+@media screen and (max-width: 768px) {
+  .bg-top {
+    padding:0;
+  }
+}
 
 /*------- FOOTER -----------*/
 
