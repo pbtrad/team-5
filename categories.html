@@ -32,7 +32,7 @@
     <main>
         
         <!--Empty container to push body content below nav bars-->
-        <div class="container header-container">
+        <div class="container header-container-categories">
             <div class="row">
                 <div class="col"></div>
             </div>
@@ -52,7 +52,7 @@
                 </div>
                 
                 <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="card w-80 mx-auto" data-type="beach">
+                    <div class="card w-80 mx-auto"data-bs-toggle="modal" data-bs-target="#modal-beach">
                         <img src="./assets/images/beach.png" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h3 class="card-title text-center">Beach</h3>
@@ -61,7 +61,7 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="card w-80 mx-auto" data-type="park">
+                    <div class="card w-80 mx-auto" data-bs-toggle="modal" data-bs-target="#modal-park">
                         <img src="./assets/images/park.png" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h3 class="card-title text-center">Park</h3>
@@ -70,7 +70,7 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="card w-80 mx-auto" data-type="technology">
+                    <div class="card w-80 mx-auto" data-bs-toggle="modal" data-bs-target="#modal-technology">
                         <img src="./assets/images/technology.png" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h3 class="card-title text-center">Technology</h3>
@@ -79,7 +79,7 @@
                 </div>
 
                <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="card w-80 mx-auto" data-type="shopping">
+                    <div class="card w-80 mx-auto" data-bs-toggle="modal" data-bs-target="#modal-shopping">
                         <img src="./assets/images/shopping.png" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h3 class="card-title text-center">Shopping</h3>
@@ -88,7 +88,7 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="card w-80 mx-auto" data-type="travel">
+                    <div class="card w-80 mx-auto" data-bs-toggle="modal" data-bs-target="#modal-travel">
                         <img src="./assets/images/travel.png" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h3 class="card-title text-center">Travel</h3>
@@ -99,6 +99,7 @@
             </div>
         </div>
 
+        <!------MODALS-------->
 
         <div class="modal fade" id="modal-home" aria-labelledby="modal-homeLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
@@ -124,6 +125,161 @@
                                     <li>Insulation</li>
                                     <li>Green energy provider</li>
                                     <li>Cloth nappies/babywipes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-beach" aria-labelledby="modal-beachLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title text-center w-100" id="modal-beachLabel">
+                            On The Beach
+                        </h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="d-none d-md-block col-md-6">
+                                <img class="w-100" src="./assets/images/beach.png">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h4 > Try these top tips on the beach;</h4>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-park" aria-labelledby="modal-parkLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title text-center w-100" id="modal-parkLabel">
+                            At the Park
+                        </h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="d-none d-md-block col-md-6">
+                                <img class="w-100" src="./assets/images/park.png">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h4 > Try these top tips when visiting your local park;</h4>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-technology" aria-labelledby="modal-technologyLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title text-center w-100" id="modal-technologyLabel">
+                            Technology
+                        </h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="d-none d-md-block col-md-6">
+                                <img class="w-100" src="./assets/images/technology.png">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h4 > Consider these tips;</h4>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-shopping" aria-labelledby="modal-shoppingLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title text-center w-100" id="modal-shoppingLabel">
+                            Shopping
+                        </h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="d-none d-md-block col-md-6">
+                                <img class="w-100" src="./assets/images/shopping.png">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h4 > Consider these top tips when shopping;</h4>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-travel" aria-labelledby="modal-travelLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title text-center w-100" id="modal-travelLabel">
+                            Travel
+                        </h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="d-none d-md-block col-md-6">
+                                <img class="w-100" src="./assets/images/travel.png">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h4>Limit your carbon footprint by following these recommendations;</h4>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
                                 </ul>
                             </div>
                         </div>

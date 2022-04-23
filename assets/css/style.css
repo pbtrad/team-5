@@ -98,6 +98,10 @@ footer {
 
 /*------- CATEGORIES PAGE --*/
 
+.header-container-categories {
+  padding-top: 15vh;
+}
+
 .card {
   cursor: pointer;
   border: none;
