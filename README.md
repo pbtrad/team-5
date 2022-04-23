@@ -111,9 +111,9 @@ Raivis Petrovskis on [GitHub](https://github.com/Raivis80)
 ## Skeleton
 ### **Wireframes**
 
-- Desktop size wireframes can viewed [here](project_files/wireframes/desktop)
-- Tablet size wireframes can viewed [here](project_files/wireframes/tablet)
-- Mobile size wireframes can viewed [here](project_files/wireframes/mobile)
+- [Landing page wireframe](project_files/wireframes/landing-wf.png)
+- [Categories page wireframe](project_files/wireframes/categories-wf.png)
+- [Details page wireframe](project_files/wireframes/detailed-wf.png)
 
 ## Design
 ### **Color Scheme**
