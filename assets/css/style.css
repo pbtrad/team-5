@@ -219,7 +219,9 @@ footer {
   background-color:var(--paint-asparagus);
 }
 
-
+ul.category-topic > li {
+  font-size: larger;
+}
 
 /*------- CONTACT US PAGE --*/
 

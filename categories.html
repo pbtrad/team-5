@@ -15,7 +15,7 @@
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- JQuery -->-->
+    <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <title>Earth Day Tips - Categories</title>
@@ -119,15 +119,29 @@
                                 <img class="w-100" src="./assets/images/home.png">
                             </div>
                             <div class="col-12 col-md-6">
-                                <h4 > Try these top tips at home;</h4>
-                                <ul>
-                                    <li>Energy use</li>
-                                    <li>Recycling</li>
-                                    <li>Water usage</li>
-                                    <li>Cleaning product use</li>
-                                    <li>Insulation</li>
-                                    <li>Green energy provider</li>
-                                    <li>Cloth nappies/babywipes</li>
+                                <h4> Try these top tips at home</h4>
+                                <ul class="category-topic">
+                                    <li>
+                                    <button type="button" class="btn btn-lg btn-transparent text-white" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Energy Use</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-lg btn-transparent text-white" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Recycling</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-lg btn-transparent text-white" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Water Usage</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-lg btn-transparent text-white" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Cleaning Products</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-lg btn-transparent text-white" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Insulation</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-lg btn-transparent text-white" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Green Energy Provider</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-lg btn-transparent text-white" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Baby</button>
+                                </li>
                                 </ul>
                             </div>
                         </div>
@@ -152,7 +166,7 @@
                             </div>
                             <div class="col-12 col-md-6">
                                 <h4 > Try these top tips on the beach;</h4>
-                                <ul>
+                                <ul class="category-topic">
                                     <li>Pick up rubbish</li>
                                     <li>Use eco sunscreen</li>
                                     <li>Don't collect shells</li>
@@ -183,7 +197,7 @@
                             </div>
                             <div class="col-12 col-md-6">
                                 <h4 > Try these top tips when visiting your local park;</h4>
-                                <ul>
+                                <ul class="category-topic">
                                     <li>Pick up rubbish</li>
                                     <li>Walk/cycle to park </li>
                                     <li>Don't light fires eg: bbq</li>
@@ -214,7 +228,7 @@
                             </div>
                             <div class="col-12 col-md-6">
                                 <h4 > Consider these tips;</h4>
-                                <ul>
+                                <ul class="category-topic">
                                     <li>Local petitions</li>
                                     <li>Earth Day website link</li>
                                     <li>Basic instructions how to find website</li>
@@ -245,7 +259,7 @@
                             </div>
                             <div class="col-12 col-md-6">
                                 <h4 > Consider these top tips when shopping;</h4>
-                                <ul>
+                                <ul class="category-topic">
                                     <li>Shop local</li>
                                     <li>Seasonal produce</li>
                                     <li>Eat less meat</li>
@@ -277,7 +291,7 @@
                             </div>
                             <div class="col-12 col-md-6">
                                 <h4>Limit your carbon footprint by following these recommendations;</h4>
-                                <ul>
+                                <ul >
                                     <li>Public Transport</li>
                                     <li>Pack lightly</li>
                                     <li>Stick to path to avoid interfering in local wildlife</li>
@@ -311,5 +325,11 @@
 
 
 <script src="./assets/js/script.js"></script>
+<script>
+     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+</script>
 </body>
 </html>
