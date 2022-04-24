@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&family=Roboto&display=swap');
+
 :root {
 
 /*------- COLOURS -----------*/
@@ -11,8 +14,8 @@
 
 
 /*------- TYPOGRAPHY -----------*/
---header-text: 'Inter', sans-serif;
---content-text: 'Inter', sans-serif;
+--header-text: 'Lato', sans-serif;
+--content-text: 'Montserrat', sans-serif;
 
 
 }
