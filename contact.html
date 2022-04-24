@@ -46,14 +46,21 @@
             <div class="row">
                 <div class="col">
                     
-                    <form onsubmit="showFormConfirmation()">
-                        <input type="text" id="name" name="name" placeholder="Name" required>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                        <input type="text" id="subject" name="subject" placeholder="Subject">
-                        <textarea id="message" name="message" rows="8" cols="50" placeholder="Message"></textarea>
-                        <button type="submit">Submit</button>
-                        <p id="form-confirmation">Thanks! We've received your message and we'll be in touch soon!</p>
-                    </form>
+                    <div class="container">
+                            <form onsubmit="showFormConfirmation()" id="contact-form" class="row">
+                                <div class="col-12 col-lg-6">
+                                    <input class="form-input mb-lg-4" type="text" id="name" name="name" placeholder="Name" required>
+                                    <input class="form-input mb-lg-4" type="email" id="email" name="email" placeholder="Email" required>
+                                    <input class="form-input mb-lg-4" type="text" id="subject" name="subject" placeholder="Subject">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <textarea class="form-input" id="message" name="message" rows="8" cols="50" placeholder="Message"></textarea>
+                                </div>
+                                <button class="btn mt-4" type="submit">Submit</button>
+                                <p id="form-confirmation">Thanks! We've received your message and we'll be in touch soon!</p>
+                            </form>
+                        </div>
+                    </div>
 
                     <div class="container">
                         <div class="row">
@@ -62,37 +69,37 @@
                             <div class="team-container col-12 col-sm-6 col-lg-4 col-xxl-2">
                                 <img class="team-img rounded-circle" src="assets/images/emily.jpg">
                                 <p>Emily Asquith</p>
-                                <a href="https://github.com/ejasquith" aria-label="Emily Asquith on Github (opens in a new tab)" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://github.com/ejasquith" aria-label="Emily Asquith on Github (opens in a new tab)" target="_blank"><i class="fa-brands fa-github github-link"></i></a>
                             </div>
 
                             <div class="team-container col-12 col-sm-6 col-lg-4 col-xxl-2">
                                 <img class="team-img rounded-circle" src="assets/images/ivan.jpg">
                                 <p>Ivan M Ulysses</p>
-                                <a href="https://github.com/Sonicbasedrop" aria-label="Ivan M Ulysses on Github (opens in a new tab)" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://github.com/Sonicbasedrop" aria-label="Ivan M Ulysses on Github (opens in a new tab)" target="_blank"><i class="fa-brands fa-github github-link"></i></a>
                             </div>
 
                             <div class="team-container col-12 col-sm-6 col-lg-4 col-xxl-2">
                                 <img class="team-img rounded-circle" src="assets/images/kelven.jpg">
                                 <p>Kelven Hughes</p>
-                                <a href="https://github.com/KelvenH" aria-label="Kelven Hughes on Github (opens in a new tab)" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://github.com/KelvenH" aria-label="Kelven Hughes on Github (opens in a new tab)" target="_blank"><i class="fa-brands fa-github github-link"></i></a>
                             </div>
 
                             <div class="team-container col-12 col-sm-6 col-lg-4 col-xxl-2">
                                 <img class="team-img rounded-circle" src="assets/images/paul.jpg">
                                 <p>Paul Browne</p>
-                                <a href="https://github.com/pbtrad" aria-label="Paul Browne on Github (opens in a new tab)" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://github.com/pbtrad" aria-label="Paul Browne on Github (opens in a new tab)" target="_blank"><i class="fa-brands fa-github github-link"></i></a>
                             </div>
 
                             <div class="team-container col-12 col-sm-6 col-lg-4 col-xxl-2">
                                 <img class="team-img rounded-circle" src="assets/images/peter.jpg">
                                 <p>Peter Anny-Nzekwue</p>
-                                <a href="https://github.com/panzek" aria-label="Peter Anny-Nzekwue on Github (opens in a new tab)" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://github.com/panzek" aria-label="Peter Anny-Nzekwue on Github (opens in a new tab)" target="_blank"><i class="fa-brands fa-github github-link"></i></a>
                             </div>
 
                             <div class="team-container col-12 col-sm-6 col-lg-4 col-xxl-2">
                                 <img class="team-img rounded-circle" src="assets/images/raivis.jpg">
                                 <p>Raivis Petrovskis</p>
-                                <a href="https://github.com/Raivis80" aria-label="Raivis Petrovskis on Github (opens in a new tab)" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://github.com/Raivis80" aria-label="Raivis Petrovskis on Github (opens in a new tab)" target="_blank"><i class="fa-brands fa-github github-link"></i></a>
                             </div> 
                         </div>                      
                     </div>

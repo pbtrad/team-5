@@ -76,19 +76,37 @@ footer {
   visibility: hidden;
 }
 
-form {
+#contact-form {
   width: 100%;
   margin: 0 auto;
 }
 
-input, button, textarea {
+.form-input {
   display: block;
   width: 100%;
   margin: 5px;
+  padding: 5px;
+}
+
+#contact-form button {
+  width: 100px;
+  margin: 0 auto;
+  background-color: var(--paint-steel);
+  color: var(--paint-off-white);
+}
+
+.github-link {
+  font-size: 300%;
+  color: var(--paint-black);
+  transition: color 0.2s;
+}
+
+.github-link:hover {
+  color: var(--paint-off-white);
 }
 
 @media screen and (max-width: 576px) {
-  form {
+  #contact-form {
     width: 80%;
   }
 }
