@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&family=Roboto&display=swap');
+
 :root {
 
 /*------- COLOURS -----------*/
@@ -6,13 +9,14 @@
 --paint-steel: #7297A0;
 --paint-queen-blue: #54738E;
 --paint-asparagus: #82AC7C;
+--paint-light-asparagus: #a3dc9c;
 --paint-off-white: #f7f5ec;
 --paint-black: #000000;
 
 
 /*------- TYPOGRAPHY -----------*/
---header-text: 'Inter', sans-serif;
---content-text: 'Inter', sans-serif;
+--header-text: 'Lato', sans-serif;
+--content-text: 'Montserrat', sans-serif;
 
 
 }
@@ -40,9 +44,116 @@ nav {
 
 /* review need for empty container & sizing after nav bar has been created */
 .header-container {
-    padding-top:15vh;
-  }
+    height: calc(100vh - 10vh);
+    min-height: 500px;
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
 
+.bg-top-container {
+  opacity: 0;
+  height: calc(100vh - 20vh);
+  background-image: url('../images/bg-top.webp');
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: bg;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+.home-tips{
+  opacity: 0;
+  color: var(--paint-steel);
+  animation: tips;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 1000ms;
+}
+  
+.home-text{
+  padding-top: 5vh;
+  color: var(--paint-asparagus);
+  font-weight: bold;
+}
+
+.home-lead {
+  color: var(--paint-beaver);
+  text-align: center;
+  opacity: 0;
+  font-size: max(1vw, 2vh, 1vmin);
+  animation: lead;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 500ms;
+}
+
+.home-heading {
+  opacity: 0;
+  color: var(--paint-asparagus);
+  font-size: max(4vw, 9vh, 5vmin);
+  animation: heading;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 250ms;
+}
+
+@keyframes bg {
+  0% {
+    transform: scale(0);
+   
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes heading {
+  0% {
+    transform: scale(0);
+    margin-right: -500px;
+    opacity: 0;
+  }
+  100% {
+     margin-right: 0px;
+     opacity: 1;
+  }
+}
+
+@keyframes lead {
+  0% {
+    transform: scale(0);
+    margin-top: 500px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes tips {
+  0% {
+    transform: scale(0);
+    margin-left: -500px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0px;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bg-top {
+    padding:0;
+  }
+}
 
 /*------- FOOTER -----------*/
 
@@ -58,14 +169,40 @@ footer {
 
 /*------- CATEGORIES PAGE --*/
 
+.header-container-categories {
+  padding-top: 15vh;
+}
+
+.card {
+  cursor: pointer;
+  border: none;
+  box-shadow: 5px 10px 18px var(--paint-black);
+}
+
 .card-body {
   background-color: var(--paint-khaki);
-  
 }
+
+
+/*-- Category Modals --*/
+.modal-border {
+  border: 3px solid red;
+}
+
+.modal-header {
+  background-color: var(--paint-khaki);
+}
+
+
+.modal-body {
+  background-color:var(--paint-asparagus);
+}
+
 
 
 /*------- CONTACT US PAGE --*/
 
+contact-page
 .team-img {
   width: 175px;
   height: 175px;
@@ -110,3 +247,60 @@ footer {
     width: 80%;
   }
 }
+=======
+
+
+ /*------- 404 ERROR PAGE --*/
+
+  .mainbox {
+    background-color:  rgba(252, 253, 253, 0);
+    margin: auto;
+    height: 600px;
+    width: 600px;
+    position: relative;
+  }
+  
+    .err {
+      color: #000;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 11rem;
+      position:absolute;
+      left: 20%;
+      top: 8%;
+    }
+  
+  .far {
+    position: absolute;
+    font-size: 8.5rem;
+    left: 42%;
+    top: 15%;
+    color: #000;
+  }
+  
+   .err2 {
+      color: #000;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 11rem;
+      position:absolute;
+      left: 68%;
+      top: 8%;
+    }
+  
+  .msg {
+      text-align: center;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 1.6rem;
+      position:absolute;
+      left: 16%;
+      top: 45%;
+      width: 75%;
+    }
+  
+  #err-home {
+    text-decoration: none;
+    color: green;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
