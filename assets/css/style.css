@@ -47,18 +47,29 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .bg-top-container {
+  opacity: 0;
   height: calc(100vh - 20vh);
-  background-image: url('../images/bg-top.png');
+  background-image: url('../images/bg-top.webp');
   background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
+  animation: bg;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
 }
 
 .home-tips{
+  opacity: 0;
   color: var(--paint-steel);
+  animation: tips;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 1000ms;
 }
   
 .home-text{
@@ -70,12 +81,69 @@ nav {
 .home-lead {
   color: var(--paint-beaver);
   text-align: center;
+  opacity: 0;
   font-size: max(1vw, 2vh, 1vmin);
+  animation: lead;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 500ms;
 }
 
 .home-heading {
+  opacity: 0;
   color: var(--paint-asparagus);
   font-size: max(4vw, 9vh, 5vmin);
+  animation: heading;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 250ms;
+}
+
+@keyframes bg {
+  0% {
+    transform: scale(0);
+   
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes heading {
+  0% {
+    transform: scale(0);
+    margin-right: -500px;
+    opacity: 0;
+  }
+  100% {
+     margin-right: 0px;
+     opacity: 1;
+  }
+}
+
+@keyframes lead {
+  0% {
+    transform: scale(0);
+    margin-top: 500px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes tips {
+  0% {
+    transform: scale(0);
+    margin-left: -500px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0px;
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 768px) {
