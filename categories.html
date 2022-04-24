@@ -122,7 +122,7 @@
                                 <h4> Try these top tips at home</h4>
                                 <ul class="category-topic">
                                     <li>
-                                    <button type="button" class="btn btn-lg btn-transparent text-white" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Energy Use</button>
+                                    <button type="button" class="btn btn-lg btn-transparent text-white" data-bs-toggle="popover" data-popoverisvisible="0" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Energy Use</button>
                                 </li>
                                 <li>
                                     <button type="button" class="btn btn-lg btn-transparent text-white" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Recycling</button>
@@ -325,11 +325,27 @@
 
 
 <script src="./assets/js/script.js"></script>
+
 <script>
-     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl)
-})
+    $(document).ready(function () {
+
+$('[data-bs-toggle="popover"]').popover({
+    placement: 'bottom',
+    delay: {
+        show: 500,
+        hide: 100
+    }
+});
+
+$('[data-bs-toggle="popover"]').click(function () {
+    
+    setTimeout(function () {
+        $('.popover').fadeOut('slow');
+    }, 5000);
+
+});
+
+});
 </script>
 </body>
 </html>
