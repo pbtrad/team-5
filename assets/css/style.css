@@ -40,7 +40,7 @@ body {
 
 /* modify bootstraps navbar text color  */
 .navbar-custom .navbar-text {
-  color: var(--paint-steel-off-white);
+  color: #f7f5ec;
 }
 
 /* review need for empty container & sizing after nav bar has been created */
