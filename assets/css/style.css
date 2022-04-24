@@ -6,10 +6,14 @@
 /*------- COLOURS -----------*/
 --paint-beaver: #A88C7D;
 --paint-khaki: #B2A68D;
+--paint-light-orange: #FFCE7E;
 --paint-steel: #7297A0;
+--paint-dark-steel: #5C6D7A;
 --paint-queen-blue: #54738E;
+--paint-dark-blue: #2F3A4A;
 --paint-asparagus: #82AC7C;
 --paint-light-asparagus: #a3dc9c;
+--paint-dark-asparagus: #5c8a6c;
 --paint-off-white: #f7f5ec;
 --paint-black: #000000;
 
@@ -87,23 +91,23 @@ body {
   overflow: hidden;
 }
 
+.home-text{
+  padding-top: 5vh;
+  color: var(--paint-queen-blue);
+  font-weight: bold;
+}
+
 .home-tips{
   opacity: 0;
-  color: var(--paint-steel);
+  color: var(--paint-queen-blue);
   animation: tips;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-delay: 1000ms;
 }
-  
-.home-text{
-  padding-top: 5vh;
-  color: var(--paint-asparagus);
-  font-weight: bold;
-}
 
 .home-lead {
-  color: var(--paint-beaver);
+  color: var(--paint-light-orange);
   text-align: center;
   opacity: 0;
   font-size: max(1vw, 2vh, 1vmin);
@@ -115,7 +119,7 @@ body {
 
 .home-heading {
   opacity: 0;
-  color: var(--paint-asparagus);
+  color: var(--paint-dark-asparagus);
   font-size: max(4vw, 9vh, 5vmin);
   animation: heading;
   animation-duration: 3s;
