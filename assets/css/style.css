@@ -6,6 +6,7 @@
 --paint-steel: #7297A0;
 --paint-queen-blue: #54738E;
 --paint-asparagus: #82AC7C;
+--paint-light-asparagus: #a3dc9c;
 --paint-off-white: #f7f5ec;
 --paint-black: #000000;
 
@@ -97,10 +98,35 @@ footer {
 
 /*------- CATEGORIES PAGE --*/
 
+.header-container-categories {
+  padding-top: 15vh;
+}
+
+.card {
+  cursor: pointer;
+  border: none;
+  box-shadow: 5px 10px 18px var(--paint-black);
+}
+
 .card-body {
   background-color: var(--paint-khaki);
-  
 }
+
+
+/*-- Category Modals --*/
+.modal-border {
+  border: 3px solid red;
+}
+
+.modal-header {
+  background-color: var(--paint-khaki);
+}
+
+
+.modal-body {
+  background-color:var(--paint-asparagus);
+}
+
 
 
 /*------- CONTACT US PAGE --*/
