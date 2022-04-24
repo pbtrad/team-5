@@ -75,3 +75,20 @@ footer {
 #form-confirmation {
   visibility: hidden;
 }
+
+form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+input, button, textarea {
+  display: block;
+  width: 100%;
+  margin: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  form {
+    width: 80%;
+  }
+}
