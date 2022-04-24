@@ -34,12 +34,13 @@ The website is build using primarily HTML5, CSS3, JavaScript and Bootstrap.
 
 ### **Contributors names and contact info**
  
+Emily Asquith on [GitHub](https://github.com/ejasquith)\
 Ivan M Ulysses on [GitHub](https://github.com/Sonicbasedrop)\
 Kelven Hughes on [GitHub](https://github.com/KelvenH)\
 Paul Browne on [GitHub](https://github.com/pbtrad)\
 Peter Anny-Nzekwue on [GitHub](https://github.com/panzek)\
-Rachel Rock on [GitHub](https://github.com/rockymiss)\
-Raivis Petrovskis on [GitHub](https://github.com/Raivis80)
+Raivis Petrovskis on [GitHub](https://github.com/Raivis80)\
+Team Facilitator: Rachel Rock on [GitHub](https://github.com/rockymiss)
 
 ## User Stories
 
@@ -111,9 +112,9 @@ Raivis Petrovskis on [GitHub](https://github.com/Raivis80)
 ## Skeleton
 ### **Wireframes**
 
-- Desktop size wireframes can viewed [here](project_files/wireframes/desktop)
-- Tablet size wireframes can viewed [here](project_files/wireframes/tablet)
-- Mobile size wireframes can viewed [here](project_files/wireframes/mobile)
+- [Landing page wireframe](project_files/wireframes/landing-wf.png)
+- [Categories page wireframe](project_files/wireframes/categories-wf.png)
+- [Details page wireframe](project_files/wireframes/detailed-wf.png)
 
 ## Design
 ### **Color Scheme**
