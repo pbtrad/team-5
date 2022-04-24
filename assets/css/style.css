@@ -32,10 +32,15 @@ body {
 }
 
 /*------- HEADER -----------*/
-
-nav {
+/* modify bootstraps background color */
+.navbar-custom {
   background-color: var(--paint-steel);
   height: 10vh;
+}
+
+/* modify bootstraps navbar text color  */
+.navbar-custom .navbar-text {
+  color: var(--paint-steel-off-white);
 }
 
 /* review need for empty container & sizing after nav bar has been created */
