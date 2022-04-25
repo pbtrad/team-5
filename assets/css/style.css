@@ -3,24 +3,24 @@
 
 :root {
 
-/*------- COLOURS -----------*/
---paint-beaver: #A88C7D;
---paint-khaki: #B2A68D;
---paint-light-orange: #FFCE7E;
---paint-steel: #7297A0;
---paint-dark-steel: #5C6D7A;
---paint-queen-blue: #54738E;
---paint-dark-blue: #2F3A4A;
---paint-asparagus: #82AC7C;
---paint-light-asparagus: #a3dc9c;
---paint-dark-asparagus: #5c8a6c;
---paint-off-white: #f7f5ec;
---paint-black: #000000;
+  /*------- COLOURS -----------*/
+  --paint-beaver: #A88C7D;
+  --paint-khaki: #B2A68D;
+  --paint-light-orange: #FFCE7E;
+  --paint-steel: #7297A0;
+  --paint-dark-steel: #5C6D7A;
+  --paint-queen-blue: #54738E;
+  --paint-dark-blue: #2F3A4A;
+  --paint-asparagus: #82AC7C;
+  --paint-light-asparagus: #a3dc9c;
+  --paint-dark-asparagus: #5c8a6c;
+  --paint-off-white: #f7f5ec;
+  --paint-black: #000000;
 
 
-/*------- TYPOGRAPHY -----------*/
---header-text: 'Lato', sans-serif;
---content-text: 'Montserrat', sans-serif;
+  /*------- TYPOGRAPHY -----------*/
+  --header-text: 'Lato', sans-serif;
+  --content-text: 'Montserrat', sans-serif;
 
 
 }
@@ -29,14 +29,18 @@
 /*------- GLOBAL STYLES -----*/
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    font-family: var(--content-text);
-    background-color: var(--paint-asparagus);
-    min-height:100vh;
-    color: var(--paint-off-white);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: var(--content-text);
+  background-color: var(--paint-asparagus);
+  min-height: 100vh;
+  color: var(--paint-off-white);
+}
+
+.container-margin {
+  margin-top: 15vh;
 }
 
 /*------- HEADER -----------*/
@@ -58,16 +62,29 @@ body {
 }
 
 .navbar-brand {
-  background-color: var(--paint-off-white);
-  border: none;
-  border-radius: 10%;
-  font-size: 24px;
-  font-weight: bolder;
+  color: var(--paint-off-white) !important;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: 222.5px;
   padding: 0.5em;
 }
 
-.navbar-custom .social-networks {
+.navbar-toggler {
+  border: none;
   color: var(--paint-off-white);
+  font-size: 2rem;
+}
+
+.social-networks-div {
+  width: 222.5px;
+}
+
+.social-networks .nav-item .nav-link {
+  color: var(--paint-off-white) !important;
   font-size: 18px;
 }
 
@@ -76,10 +93,16 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0,0,0,1);
+  color: var(--paint-off-white) !important;
 }
 
-.navbar-menu a:hover {
+.navbar-item .nav-link,
+.navbar-item .nav-link {
+  color: var(--paint-off-white);
+  text-decoration: 2px underline #f7f5ec;
+}
+
+.active {
   text-decoration: 2px underline #f7f5ec;
 }
 
@@ -89,15 +112,16 @@ body {
 
 /*------- HEADER ENDS-----------*/
 
-/* review need for empty container & sizing after nav bar has been created */
+/*------- HOME PAGE --------*/
+
 .header-container {
-    height: calc(100vh - 10vh);
-    min-height: 500px;
-    background-image: url('../images/bg.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
+  height: calc(100vh - 10vh);
+  min-height: 500px;
+  background-image: url('../images/bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .bg-top-container {
@@ -113,13 +137,13 @@ body {
   overflow: hidden;
 }
 
-.home-text{
+.home-text {
   padding-top: 5vh;
   color: var(--paint-queen-blue);
   font-weight: bold;
 }
 
-.home-tips{
+.home-tips {
   opacity: 0;
   color: var(--paint-queen-blue);
   animation: tips;
@@ -154,6 +178,7 @@ body {
     margin-top: -500px;
     transform: scale(0);
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
@@ -166,9 +191,10 @@ body {
     margin-right: -500px;
     opacity: 0;
   }
+
   100% {
-     margin-right: 0px;
-     opacity: 1;
+    margin-right: 0px;
+    opacity: 1;
   }
 }
 
@@ -178,6 +204,7 @@ body {
     margin-top: 500px;
     opacity: 0;
   }
+
   100% {
     margin-left: 0px;
     opacity: 1;
@@ -190,6 +217,7 @@ body {
     margin-left: -500px;
     opacity: 0;
   }
+
   100% {
     margin-left: 0px;
     opacity: 1;
@@ -198,20 +226,10 @@ body {
 
 @media screen and (max-width: 768px) {
   .bg-top {
-    padding:0;
+    padding: 0;
   }
 }
 
-/*------- FOOTER -----------*/
-
-footer {
-  background-color: var(--paint-steel);
-  margin-top: auto;
-  padding-top: auto;
-  min-height: 10vh;
-}
-
-/*------- HOME PAGE --------*/
 
 
 /*------- CATEGORIES PAGE --*/
@@ -242,17 +260,16 @@ footer {
 
 
 .modal-body {
-  background-color:var(--paint-asparagus);
+  background-color: var(--paint-asparagus);
 }
 
-ul.category-topic > li {
+ul.category-topic>li {
   font-size: larger;
 }
 
 /*------- CONTACT US PAGE --*/
 
-contact-page
-.team-img {
+contact-page .team-img {
   width: 175px;
   height: 175px;
   border-radius: 50%;
@@ -297,59 +314,71 @@ contact-page
   }
 }
 
+/*------- 404 ERROR PAGE --*/
 
+.mainbox {
+  background-color: rgba(252, 253, 253, 0);
+  margin: auto;
+  height: 600px;
+  width: 600px;
+  position: relative;
+}
 
- /*------- 404 ERROR PAGE --*/
+.err {
+  color: #000;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 11rem;
+  position: absolute;
+  left: 20%;
+  top: 8%;
+}
 
-  .mainbox {
-    background-color:  rgba(252, 253, 253, 0);
-    margin: auto;
-    height: 600px;
-    width: 600px;
-    position: relative;
-  }
-  
-    .err {
-      color: #000;
-      font-family: 'Nunito Sans', sans-serif;
-      font-size: 11rem;
-      position:absolute;
-      left: 20%;
-      top: 8%;
-    }
-  
-  .far {
-    position: absolute;
-    font-size: 8.5rem;
-    left: 42%;
-    top: 15%;
-    color: #000;
-  }
-  
-   .err2 {
-      color: #000;
-      font-family: 'Nunito Sans', sans-serif;
-      font-size: 11rem;
-      position:absolute;
-      left: 68%;
-      top: 8%;
-    }
-  
-  .msg {
-      text-align: center;
-      font-family: 'Nunito Sans', sans-serif;
-      font-size: 1.6rem;
-      position:absolute;
-      left: 16%;
-      top: 45%;
-      width: 75%;
-    }
-  
-  #err-home {
-    text-decoration: none;
-    color: green;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
+.far {
+  position: absolute;
+  font-size: 8.5rem;
+  left: 42%;
+  top: 15%;
+  color: #000;
+}
+
+.err2 {
+  color: #000;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 11rem;
+  position: absolute;
+  left: 68%;
+  top: 8%;
+}
+
+.msg {
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.6rem;
+  position: absolute;
+  left: 16%;
+  top: 45%;
+  width: 75%;
+}
+
+#err-home {
+  text-decoration: none;
+  color: green;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*------- FOOTER -----------*/
+
+footer {
+  background-color: var(--paint-steel);
+  color: var(--paint-off-white) !important;
+  margin-top: auto;
+  padding-top: auto;
+  min-height: 10vh;
+}
+
+footer .nav-item {
+  color: var(--paint-off-white) !important;
+}
