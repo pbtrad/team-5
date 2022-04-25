@@ -37,6 +37,15 @@ body {
 
 /*------- HEADER -----------*/
 /* custom bootstrap navbar */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  justify-content: center;
+}
+
 .navbar-custom {
   background-color: var(--paint-steel);
   color: var(--paint-off-white);
@@ -60,7 +69,10 @@ body {
 
 .navbar-custom .navbar-menu {
   text-transform: uppercase;
-  text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0,0,0,1);
 }
 
 .navbar-menu a:hover {
