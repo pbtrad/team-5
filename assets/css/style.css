@@ -151,8 +151,8 @@ body {
 
 @keyframes bg {
   0% {
+    margin-top: -500px;
     transform: scale(0);
-   
   }
   100% {
     transform: scale(1);
