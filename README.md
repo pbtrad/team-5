@@ -1,7 +1,6 @@
-# Project Title
-
-Team 5 Project
-
+# Eco-Tips
+![img](project_files/banner.JPG)
+## *The live site link can be found [Here](https://pbtrad.github.io/team-5/)*
 ### Table of contents
 
 1. [Introduction](#Introduction)
@@ -16,7 +15,7 @@ Team 5 Project
 1. [Credits](#Credits)
 
 
-The live link can be found here - https://our-site.html 
+
 ## Introduction
 
 ### **Project**
@@ -32,7 +31,7 @@ This website was designed to provide users with Earth Day tips. The main focus o
 
 The website is build using primarily HTML5, CSS3, JavaScript and Bootstrap.
 
-### **Contributors names and contact info**
+### **Team: Green-Geeks**
  
 Emily Asquith on [GitHub](https://github.com/ejasquith)\
 Ivan M Ulysses on [GitHub](https://github.com/Sonicbasedrop)\
@@ -60,8 +59,9 @@ Team Facilitator: Rachel Rock on [GitHub](https://github.com/rockymiss)
 
 ## Strategy
 ### **The website needs to enable the User to**
-- Easy Navigate the site and find the relevant content.
+- Able to understand the main purpose of the site.
 - Navigate the site easily through categories clearly.
+- Easy Navigate the site and find the relevant content.
 - Find Website owner on their preferred social media platform.
 - Contact Administrator if any issue or bug.
 
@@ -89,12 +89,13 @@ Team Facilitator: Rachel Rock on [GitHub](https://github.com/rockymiss)
 ### **Content Requirements**
 - NavBar
    - Internal site navigation Links with categories
-   - Site brand name 
+   - Site brand name
+   - Links to social media
 - Landing Page
-   - Central Hero image or video
-   - Tile and description
+   - Full size Central Hero image
+   - Tile and description text
 - Categories pages
-    - Image thumbnail linked to relevant detailed view page or modal
+    - Image thumbnail linked to relevant detail modal
     - Tips title
     - Short description 
 - Detailed view 
@@ -103,7 +104,7 @@ Team Facilitator: Rachel Rock on [GitHub](https://github.com/rockymiss)
     - Tips Description 
 - Contact page
    - Contact Form
-   - Links to Social Media
+   - Links to Contributor Github pages
 - footer
    - Copyright information
    - Social Links
@@ -119,15 +120,63 @@ Team Facilitator: Rachel Rock on [GitHub](https://github.com/rockymiss)
 ## Design
 ### **Color Scheme**
 - Color scheme used through out the site.
-![Colors](project_files/colors.png)
+
+beaver: #A88C7D
+<div>
+    <input type="color"value="#A88C7D">
+</div>
+khaki: #B2A68D
+<div>
+    <input type="color"value="#B2A68D">
+</div>
+light-orange: #FFCE7E
+<div>
+    <input type="color"value="#FFCE7E">
+</div>
+steel: #7297A0
+<div>
+    <input type="color"value="#7297A0">
+</div>
+dark-steel: #5C6D7A
+<div>
+    <input type="color"value="#5C6D7A">
+</div>
+queen-blue: #54738E
+<div>
+    <input type="color"value="#54738E">
+</div>
+dark-blue: #2F3A4A
+<div>
+    <input type="color"value="#2F3A4A">
+</div>
+asparagus: #82AC7C
+<div>
+    <input type="color"value="#82AC7C">
+</div>
+light-asparagus: #a3dc9c
+<div>
+    <input type="color"value="#a3dc9c">
+</div>
+dark-asparagus: #5c8a6c
+<div>
+    <input type="color"value="#5c8a6c">
+</div>
+off-white: #f7f5e
+<div>
+    <input type="color"value="#f7f5e">
+</div>
+black: #000000
+<div>
+    <input type="color"value="#000000">
+</div>
 
 ### **Fonts**
-- Body main text font family [font](https://fonts.googleapis.com)  As a backup sans-serif.
+- Body main text font family Montserrat As a backup sans-serif.
+- Header-text font family Lato As a backup sans-serif.
 
 ### **Media**
-
+All the images was supplied from adobe stock photos
 ## Features 
-
 ### **Existing Features**
 
 - **Navigation**
@@ -138,26 +187,32 @@ Team Facilitator: Rachel Rock on [GitHub](https://github.com/rockymiss)
 
 - **Landing page** 
 
-    [Landing Page image](project_files/features/landing.png)
+    ![Landing Page image](project_files/features/landing.png)
     - Large background image span the full width across the whole viewport and is responsive to all other browser sizes.
-    - Outlined key earth day tips and features for users to easily understand the main purpose of the site.
+    - In the center outlined key earth day tips feature for users to easily understand the main purpose of the site.
+    - Images was cut and crafted to match categories page style with Adobe Illustrator.
+    - Keyframe based animation, with the geometry effects between keyframes and added smooth transition effects.
 
 - **Categories page**
 
-    [Categories Page image](project_files/features/categories.png)
+    ![Categories Page image](project_files/features/categories.png)
     - Responsive Image Grid that varies depending on screen size.
-    - Click on image to reveal individual item detailed page.
+    - Click on image to reveal individual item detailed Modal.
+    - Some of the Thumbnail images was created in Adobe illustrator to match rest of the images
 
-- **Detailed Page**
+- **Detailed Modal**
 
-    [Detailed Page image](project_files/features/detailed.png)
-    - Description and Image that Provides information on a relevant Earth Day tip.
+    ![Detailed Page image](project_files/features/detailed.png)
+    - Description, Image that Provides information on a relevant Earth Day tips.
+    - For detailed descriptions we are using bootstrap Modals
+    - The modal is positioned over everything else in the document.
+    - By clicking on the modal “backdrop” will automatically close the modal.
 
 - **Contact Page**
 
     [Contact page image](project_files/features/contact.png)
     - Contact form allows users to communicate with the site owner
-    - Contact page features social media links for user to connect.
+    - Contact page features Contributors names and contact info
 
 - **Footer**
 
@@ -165,15 +220,12 @@ Team Facilitator: Rachel Rock on [GitHub](https://github.com/rockymiss)
     - Footer was designed to be responsive across all devices.
     - Footer features social media links and copyright information.
 
-### Features Left to Implement
-
-- Another feature idea
-
 ## **Technologies and Frameworks**
 
 ### **Languages Used**
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5) Hypertext Markup Language (HTML)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) Cascading Style Sheets (CSS)
+-   [JavaScript](https://www.javascript.com/) Interactive functionality.
 
 ### **Frameworks, Libraries & Programs Used**
 - [Bootstrap:](https://getbootstrap.com/docs/5.0/getting-started/download/) was used to assist with the responsiveness and to style the website.
@@ -228,25 +280,8 @@ git clone https://github.com/USERNAME/REPOSITORY
 ## Credits 
 
 ### **Code**
--  [placeholder.com](https://placeholder.com/): Free Image Placeholder.
 -  [stackoverflow.com](https://stackoverflow.com/): Useful website for code tips.
--  [www.w3schools](https://www.w3schools.com/): Useful website for code tips.
--  [Bootstrap5](https://getbootstrap.com/): Bootstrap Library was used to make site responsive.
--  [coolors.co](https://coolors.co/): Colour palettes.
--  [pexels.com](https://www.pexels.com/): Images used throughout site.
 
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-- The photos used on the home and sign up page are from This Open Source site  [pexels.com](https://www.pexels.com/)
-- The images used for the gallery page were taken from this other open source site  [pexels.com](https://www.pexels.com/)
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [example]()
