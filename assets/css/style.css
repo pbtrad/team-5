@@ -36,7 +36,7 @@ body {
 }
 
 /*------- HEADER -----------*/
-/* modify bootstraps background color */
+/* custom bootstrap navbar */
 .navbar-custom {
   background-color: var(--paint-steel);
   color: var(--paint-off-white);
@@ -57,8 +57,17 @@ body {
   font-size: 18px;
 }
 
+.navbar-custom .navbar-menu {
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .navbar-menu a:hover {
   text-decoration: 2px underline #f7f5ec;
+}
+
+.me-auto {
+  margin: auto;
 }
 
 /*------- HEADER ENDS-----------*/
