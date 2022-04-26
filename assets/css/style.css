@@ -115,7 +115,7 @@ body {
 /*------- HOME PAGE --------*/
 
 .header-container {
-  height: calc(100vh - 10vh);
+  height: calc(100vh - 15vh);
   min-height: 500px;
   background-image: url('../images/bg.webp');
   background-size: cover;
@@ -228,9 +228,10 @@ body {
   .bg-top {
     padding: 0;
   }
+  .container-margin {
+    margin-top: 20vh;
+  }
 }
-
-
 
 /*------- CATEGORIES PAGE --*/
 
@@ -258,7 +259,6 @@ body {
   background-color: var(--paint-khaki);
 }
 
-
 .modal-body {
   background-color: var(--paint-asparagus);
 }
@@ -269,7 +269,11 @@ ul.category-topic>li {
 
 /*------- CONTACT US PAGE --*/
 
-contact-page .team-img {
+.min-h {
+  min-height: calc(100vh - 15vh);
+}
+
+.team-container .team-img {
   width: 175px;
   height: 175px;
   border-radius: 50%;
@@ -300,18 +304,20 @@ contact-page .team-img {
 
 .github-link {
   font-size: 300%;
-  color: var(--paint-black);
+  color: var(--paint-off-white);
   transition: color 0.2s;
+  transition: 250ms;
 }
 
 .github-link:hover {
-  color: var(--paint-off-white);
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 576px) {
   #contact-form {
     width: 80%;
   }
+  
 }
 
 /*------- 404 ERROR PAGE --*/
